@@ -29,6 +29,9 @@
 
         -->
         <style>
+            body {
+                margin: 0;
+            }
             a {
               color: black;
               text-decoration: none;
@@ -40,21 +43,34 @@
               margin: 0;
               padding: 20px;
             }
-            #grid{
-                display: grid;
-                grid-template-columns: 150px 1fr;
-            }
             ol {
                 border-right: 1px solid gray;
                 width: 100px;
                 margin: 0;
                 padding: 20px;
             }
+            #grid{
+                display: grid;
+                grid-template-columns: 150px 1fr;
+            }
+
             #grid #article {
                 padding-left: 25px;
             }
             #grid ol{
                 padding-left: 33px;
+            }
+            @media(max-width: 800px){
+                h1 {
+                    border-bottom: none;
+                }
+                ol {
+                    border-right: none;
+                }
+                #grid{
+                    display: block;
+                    grid-template-columns: 150px 1fr;
+                }
             }
         </style>
     </head>
