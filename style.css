@@ -19,11 +19,20 @@
         margin: 0;
         padding: 20px;
     }
+
     #grid{
         display: grid;
         grid-template-columns: 150px 1fr;
     }
-
+    #grid #buttons {
+        border-right: 1px solid gray;
+        width: 100px;
+        margin: 0;
+        padding-right: 38px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+    }
     #grid #article {
         padding-left: 25px;
     }
@@ -35,6 +44,9 @@
             border-bottom: none;
         }
         ol {
+            border-right: none;
+        }
+        #grid #buttons {
             border-right: none;
         }
         #grid{
